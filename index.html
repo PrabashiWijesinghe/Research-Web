@@ -1,0 +1,1613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Heal Derm</title>
+
+<!--
+     +--------------------------------------+
+     +                                      +
+     +              meta-data               +
+     +                                      +
+     +--------------------------------------+
+-->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+<!--
+     +--------------------------------------+
+     +                                      +
+     +                css                   +
+     +                                      +
+     +--------------------------------------+
+-->
+    <!---------bootstrap---------->
+    <link rel="stylesheet" href="assests/css/bootstrap/bootstrap.min.css">
+
+    <link rel="shortcut icon" href="assests/images/logo/logo.png" width="100%" >
+
+    <!--------animate.css--------->
+    <link rel="stylesheet" href="assests/css/animatecss/animeta.css">
+
+    <!--------google-font--------->
+    <!--forum--><!--font-family: 'Forum', cursive;-->
+    <link href="https://fonts.googleapis.com/css?family=Forum&display=swap" rel="stylesheet">
+    <!--poiret one--><!--font-family: 'Forum', cursive;font-family: 'Poiret One', cursive;-->
+    <link href="https://fonts.googleapis.com/css?family=Forum|Poiret+One&display=swap" rel="stylesheet">
+    <!--ubuntu--><!--font-family: 'Ubuntu', sans-serif;-->
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+
+    <!--------common-css---------->
+    <link rel="stylesheet" href="assests/css/common/common.css">
+
+    <!--------main-css---------->
+    <link rel="stylesheet" href="assests/css/common/main/main.css">
+
+    <!--------owl---------->
+    <link rel="stylesheet" href="assests/css/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="assests/css/owl/owl.theme.default.min.css">
+
+    <!-------popup--------->
+    <link rel="stylesheet" href="assests/css/popup/magnific-popup.css">
+
+	<script defer src="https://friconix.com/cdn/friconix.js"> </script>
+
+
+
+
+  <style>
+        /*.ow{*/
+            /*display: flex;*/
+        /*}*/
+        /*.ow div{*/
+            /*height: 50%;*/
+        /*}*/
+
+
+        /*cardsystem5*/
+        .cardsystem5{
+            /*background: red;*/
+            width: 100%;
+            /*height: 200px;*/
+            /*box-shadow: 1px 1px 32px 0.5px black;*/
+            padding: 2px;
+            margin-top: 2px;
+            overflow-y: hidden;
+        }
+
+        .cardsystem5-rack{
+            /*background: #007bff;*/
+            width: 100%;
+            height: 250px;
+
+            position: relative;
+
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+
+        .cardsystem5-hr{
+            width: 50%;
+            border: 1px solid white;
+            transition: 300ms;
+        }
+
+        .cardsystem5-rack-inner{
+            position: absolute;
+            color: black;
+            margin: auto;
+
+            left: 0;
+
+            right: 0;
+
+            top: 30%;
+
+            bottom: 0;
+
+            transition: 300ms;
+        }
+
+        #cardsystem5-id-1{
+            /*background: url("assests/images/bg1/section1-home.jpg");*/
+            background-size: cover;
+        }
+
+        #cardsystem5-id-2{
+            /*background: url("assests/images/bg1/singapore_fountain_skyscrapers_115316_3840x2160.jpg");*/
+            background-size: cover;
+        }
+
+        #cardsystem5-id-3{
+            /*background: url("assests/images/bg1/section1-home.jpg");*/
+            background-size: cover;
+        }
+
+        #cardsystem5-id-4{
+            /*background: url("assests/images/bg1/section1-home.jpg");*/
+            background-size: cover;
+        }
+
+        .cardsystem5-rack:hover .cardsystem5-hr{
+            width: 10%;
+            transition: 300ms;
+        }
+
+        .cardsystem5-rack:hover .cardsystem5-rack-inner{
+            top: -50%;
+            transition: 300ms;
+        }
+
+        .cardsystem5-arrow-holder{
+            color: white;
+            font-size: 35px;
+            position: absolute;
+            margin: auto;
+
+            left: 0;
+
+            right: 0;
+
+            top: 180%;
+
+            bottom: 0;
+
+            transition: 300ms;
+        }
+
+        .cardsystem5-arrow-holder button{
+            background: #2196f3;
+            border: 1px solid black;
+            color: white;
+            width: 50%;
+            font-size: 20px;
+            padding: 5px;
+            border: 2px solid white;
+            border-radius: 8px;
+            margin-top: 8%;
+        }
+
+        .cardsystem5-rack:hover .cardsystem5-arrow-holder{
+            top: 10%;
+            transition: 300ms;
+        }
+
+        .cardsystem5-rack:hover .cardsystem5-overlayer{
+            /*background: #007bff;*/
+            transition: 2s;
+        }
+
+        .cardsystem5-overlayer{
+            /*background: rgba(0,0,0,0.5);*/
+            width: 100%;
+            height: 100%;
+            transition: 2s;
+        }
+
+
+/*======================================*/
+        .clear { clear: both; }
+
+        .stage {
+
+            background-color: #000000;
+
+            float: left;
+
+            height: 330px;
+
+            overflow: hidden;
+
+            width: 100%;
+
+            max-width: 800px;
+
+            z-index: 10;
+
+            position: relative;
+
+            -webkit-backface-visibility: hidden;
+
+        }
+
+        .cbImage {
+
+            width: 200px;
+
+            height: 268px;
+
+            float: left;
+
+            margin: 25px 0px 25px 0px;
+
+            color: white;
+
+            box-shadow: 0px 5px 10px 0px #D6D6D6;
+
+            position: absolute;
+
+            -webkit-transform-style: preserve-3d;
+
+            transform-style: preserve-3d;
+
+        }
+
+
+
+        .cbImage img {
+
+            width: 100%;
+
+            height: 100%;
+
+        }
+
+
+
+        .inactiveLeft {
+
+            -webkit-transform: perspective(500px) rotateY(60deg);
+
+            -O-transform: perspective(500px) rotateY(60deg);
+
+            transform: perspective(500px) rotateY(60deg);
+
+            -webkit-transition: all .5s ease-out;
+
+            -O-transition: all .5s ease-out;
+
+            transition: all .5s ease-out;
+
+            box-shadow: 12px 0px 20px 0px #d6d6d6;
+
+        }
+
+
+
+        .inactiveRight {
+
+            -webkit-transform: perspective(500px) rotateY(-60deg);
+
+            -O-transform: perspective(500px) rotateY(-60deg);
+
+            transform: perspective(500px) rotateY(-60deg);
+
+            -webkit-transition: all .5s ease-out;
+
+            -O-transition: all .5s ease-out;
+
+            transition: all .5s ease-out;
+
+            box-shadow: -12px 0px 20px 0px #d6d6d6;
+
+        }
+
+
+
+
+    </style>
+
+  </head>
+
+  <body>
+
+  <!--
+     +--------------------------------------+
+     +                                      +
+     +             pre-loader               +
+     +                                      +
+     +--------------------------------------+
+-->
+
+<div class="preloader">
+    <!--<div id="businesslogo"><img src="assests/img/logo/uimountainlogo.png" alt="" width="180px"></div>-->
+    <div class="status"></div>
+</div>
+
+
+
+  <!--
+       +--------------------------------------+
+       +                                      +
+       +               header                 +
+       +                                      +
+       +--------------------------------------+
+  -->
+
+
+  <header>
+    <nav id="nav1" class="nav-bar fixed-top">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-md-4 col-lg-2">
+                <img src="assests/images/logo/logo.png" id="navimg" width=100% style="margin-top: 3px;">
+                </div>
+                <div class="col-12 col-md-12 col-lg-10">
+                    <div class="row">
+                        <!-- <div class="col-12 col-md-12 col-sm-12 text-right">
+                            <h6 style="display: inline-block"><i class="fi-xwlrxl-phone-wide"></i>+(94) 382 248354</h6><br>
+                        </div> -->
+                        <div class="col-12 col-md-12 col-lg-12 col-sm-12">
+                            <ol id="nav1-ol" style="margin-left: 650px;margin-top: 20px;">
+                                <a href="#section1" class="smooth-scroll" style="text-decoration: inherit; color: inherit;"><li>Home</li></a>
+                            
+                                <a href="#intro" style="text-decoration: inherit; color: inherit;"><li>Introduction</li></a>
+
+                                <a href="#section3" style="text-decoration: inherit; color: inherit;"><li>Domain</li></a>
+
+                                <a href="#section110" class="smooth-scroll" style="text-decoration: inherit; color: inherit;"><li>Milestones</li></a>
+
+                                <a href="#section10" class="smooth-scroll" style="text-decoration: inherit; color: inherit;"><li>conatct Us</li></a>
+
+                                <a href="#section120" class="smooth-scroll" style="text-decoration: inherit; color: inherit;"><li>Documents</li></a>
+
+                                <a href="#section81" class="smooth-scroll" style="text-decoration: inherit; color: inherit;"><li>Technologies</li></a>
+
+                                <a href="#section4" class="smooth-scroll" style="text-decoration: inherit; color: inherit;"><li>Team</li></a>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <nav id="nav2" class="collapse navbar-collapse navbar-ex1-collapse" style="position: fixed; z-index: 999;">
+    <div class="pos-f-t" style="overflow-y: auto;">
+        <div class="collapse" id="navbarToggleExternalContent">
+        <div class="p-4 text-left">
+            <img src="assests/images/logo/logo.png" width="100%">
+            <ol class="font-ubuntu" style="list-style: none;height: 50vh; padding: 0; overflow-y: auto" id="nav2-main-mobi">
+              <li> <a href="#section1" class="smooth-scroll" style="text-decoration: inherit; color: inherit;">Home</a></li>
+              <li><a href="#intro" class="smooth-scroll" style="text-decoration: inherit; color: inherit;">Introduction</a></li>
+              <li><a href="#section3" style="text-decoration: inherit; color: inherit;">Domain</a></li>
+              <li><a href="#section110" style="text-decoration: inherit; color: inherit;">Milestones</a></li>
+              <li><a href="#section10" style="text-decoration: inherit; color: inherit;">Contact Us</a></li>
+              <li><a href="#section120" class="smooth-scroll" style="text-decoration: inherit; color: inherit;">Documents</a></li>
+              <li><a href="#section81" class="smooth-scroll" style="text-decoration: inherit; color: inherit;">Technologies</a></li>
+              <li><a href="#sectionArch" class="smooth-scroll" style="text-decoration: inherit; color: inherit;">Achivements</a></li>
+              <li><a href="#section4" class="smooth-scroll" style="text-decoration: inherit; color: inherit;">Team</a></li>
+            </ol>
+        </div>
+        </div>
+        <nav class="navbar navbar-dark" style=" background: rgba(0,0,0,0.7); margin-left:300px;" >
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation" style="color: #007bff;">
+            <i class="fi-xnsuxl-three-bars-solid"></i>
+        </button>
+ 
+
+        </nav>
+    </div>
+    </nav>
+
+
+
+  </header>
+
+  <!--
+       +--------------------------------------+
+       +                                      +
+       +                main                  +
+       +                                      +
+       +--------------------------------------+
+  -->
+
+      <main>
+
+        <!-- Home section start -->
+        <section id="section1">
+            <div id="carouselExampleInterval" class="carousel slide section1-top-slider" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-interval="10000"  id="section1-home-bg-img1">
+                    </div>
+                    <!-- Comment the slider other images -->
+                    <!-- <div class="carousel-item" data-interval="2000" id="section1-home-bg-img2">
+                    </div>
+                    <div class="carousel-item"   id="section1-home-bg-img3">
+                    </div> -->
+
+                    <!-- <div class="container font-piorat" id="c">
+                        <div class="row text-center">
+                            <div class="col-md-12">
+                                <h1 id="hpme-title" class="animated zoomIn delay-1s"><strong>Explore Beauty of World</strong></h1>
+                                <button type="button" class="btn  buttonX font-ubuntu animated zoomIn delay-1s" style="color: white"><span>Explore</span></button>
+                                <h4><strong>with Zaara</strong></h4>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+
+        <section id="intro" class="" style="margin-top: 20px; margin-bottom: 70px; height: 10vh">
+            <div class="container mb-5">
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 text-center wow zoomIn">
+                    <h1 class="font-piorat"><strong>“Heal Derm”</strong> :Avoiding Skin Infections Caused By Diabetes</h1>
+                        <hr style="border: 2px solid #007bff; width: 2%">
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Home section end -->
+
+        <!-- domain -->
+        <section id="section3" class="secdivider" style="padding-bottom: 5%;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-8 text-left wow slideInLeft">
+                        <h4 class="font-piorat">Heal Derm</h4>
+                        <h1 class="font-piorat">What is <strong>Heal Derm</strong></h1>
+                        <p>A smartphone app in Sri Lanka aims to diagnose and treat skin infections caused by diabetes using machine learning algorithms and computer vision. 
+                          The app can detect foot ulcers, nail defects, Acanthosis nigricans, and cellulitis.</p>
+                        <!-- <button type="button" class="btn  buttonX font-ubuntu" style="width: 100%; color: white" onclick="location.href = 'pages/about.html';"><span>Explore</span></button> -->
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 text-center wow zoomIn">
+                        <img src="assests/images/logo/logo.png" alt="" width="60%" >
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-4 text-center wow zoomIn" style="margin-top:12vh;">
+                        <img src="assests/images/diabetes.png" alt="" width="70%" >
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-8 text-right wow slideInLeft">
+                        <h4 class="font-piorat">Heal Derm</h4>
+                        <h1 class="font-piorat"><strong>Background</strong></h1>
+                        <p>A mobile application in Sri Lanka aims to help identify and treat skin infections caused by diabetes, such as foot ulcers, acanthosis nigricans, cellulitis and nail issues. 
+                          The app will provide information on diabetes forms, enhancing patient quality of life and reducing diabetes-related deaths.</p>
+                        <!-- <button type="button" class="btn  buttonX font-ubuntu" style="width: 100%; color: white" onclick="location.href = 'pages/about.html';"><span>Explore</span></button> -->
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-8 text-left wow slideInLeft">
+                        <h4 class="font-piorat">Heal Derm</h4>
+                        <h1 class="font-piorat"><strong>Research Gap</strong></h1>
+                        <p>The proposed research proposes a patient-centered approach to diabetes treatment,
+                          aiming to improve patient outcomes and reduce healthcare costs, 
+                          offering a promising solution for global health.
+
+                          </p>
+                        <!-- <button type="button" class="btn  buttonX font-ubuntu" style="width: 100%; color: white" onclick="location.href = 'pages/about.html';"><span>Explore</span></button> -->
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 text-center wow zoomIn" >
+                   
+                        <img src="assests/images/foot.png" alt="" width="50%" >
+                 
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- domain end -->
+
+        <!-- problem -->
+        <div id="about-02" style="padding-bottom: 5%;padding-top: 5%;">
+          <div class="row mb-5">
+            <div class="col-md-12 wow zoomIn text-center">
+                <h4 class="font-piorat">Heal Derm</h4>
+                <h1 class="font-piorat">Research <strong>Problems</strong></h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3" >
+                <div class="about-item text-center" >
+                    <p>
+                      Diabetic foot ulcers are a chronic condition affecting millions globally and locally. Most people are unaware of the condition, and there is no easy diagnostic method at home.
+                       Even if diagnosed, they may not know what to do next. Doctors and dermatologists struggle to diagnose foot ulcers due to lack of knowledge and reliance on western medical solutions, 
+                       particularly among older individuals.</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="about-item text-center" >
+                    <p>
+                      Acanthosis nigricans is a skin disease caused by diabetes in Sri Lanka that is often overlooked due to lack of resources and knowledge. Despite most people 
+                      experiencing neck discoloration, they are unaware of the condition. Despite the diagnosis, there is no clear understanding of the appropriate treatment for 
+                      this skin disease, highlighting the need for improved healthcare systems in Sri Lanka.</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="about-item text-center" >
+                    <p>Diabetes in Sri Lanka often leads to undetected skin infections like cellulitis, despite the existing system for 
+                      detecting foot ulcers using image processing, as there is no other system for detecting cellulitis infections.
+                      Can image processing be used to accurately detect and diagnose cellulitis caused by diabetes based on visual characteristics of the infected area? </p>
+                </div>
+            </div>
+            <div class="col-md-3">
+              <div class="about-item text-center" >
+                  <p>Nail infections are common among diabetic patients in Sri Lanka. Nail infections caused by diabetes properly
+                    Undiagnosed, it cannot be treated and cured.
+                    Despite the existing method of detecting foot ulcers by imaging, due to diabetes
+                    Due to the lack of a suitable method to distinguish between diabetic and non-diabetic nail infections.</p>
+              </div>
+          </div>
+
+        </div>
+
+        </div>
+        <!-- problem ends -->
+
+        <!-- objective -->
+        <div id="objectives" style="padding-bottom: 5%">
+          <div class="row mb-5">
+
+            <div class="col-md-12 wow zoomIn text-center">
+                <h4 class="font-piorat">Heal Derm</h4>
+                <h1 class="font-piorat">Research <strong>Objectives</strong></h1>
+            </div>
+        </div>
+                    <div class="row">
+
+                        <div class="col-md-3" >
+
+                            <div class="objective-item text-center" >
+                              <i class="fi-snsuxl-bug" style="font-size: 50px;"></i>
+                                <p>Detection of severity level of the foot ulcer caused by diabetic and non diabetic by using image processing and providing the prorper solutions by applying machine learning</p>
+
+                            </div>
+
+                        </div>
+                        <div class="col-md-3">
+
+                            <div class="objective-item text-center"  >
+                              <i class="fi-swsuxl-tree-wide" style="font-size: 50px;"></i>
+                                <p>Detection of Acanthosis Nigricans infections caused by diabetic and non diabetic by using image processing and providing the prorper solutions by applying machine learning</p>
+
+                            </div>
+
+                        </div>
+                        <div class="col-md-3">
+
+                            <div class="objective-item text-center" >
+                              <i class="fi-snsuxl-shopping-bag" style="font-size: 50px;"></i>
+                                <p>Detection of cellulitis infections caused by diabetic and non diabetic by using image processing and providing the prorper solutions by applying machine learning</p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-3">
+
+                          <div class="objective-item text-center" >
+                            <i class="fi-snsuxl-tractor-solid" style="font-size: 50px;"></i>
+                              <p>Detection of nail infections caused by diabetic and non diabetic by using image processing and providing the prorper solutions by applying machine learning</p>
+
+                          </div>
+
+                      </div>
+
+                    </div>
+
+        </div>
+        <!-- objective ends -->
+
+        <!-- Team section start -->
+        <section id="section4" class="secdivider">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-6 wow slideInLeft">
+                        <h4 class="font-piorat">Heal Derm</h4>
+                        <h1 class="font-piorat">Team <strong> Members</strong></h1>
+                        <p>Meet the Team</p>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+
+                            <div class="col-12 col-md-6 col-lg-3 card-margin-down wow bounceIn">
+
+                                <div class="card text-center" style="width: 100%;">
+                                    <img src="assests/images/team/Picture11.jpg" height="255pc" width="230pc" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Ishan Kalpadith W.A</h5>
+                                        <p class="card-title">Team Leader</p>
+                                        <a href="#"><i class="fi-snsuxl-linkedin"></i></a>
+                                        <a href="#"><i class="fi-snsuxl-facebook"></i></a>
+                                        <a href="#"><i class="fi-cnsuxl-globe"></i></a>
+                                        <a href="#"><i class="fi-snsuxl-github-alt"></i></a>
+                                        <a href="#"><i class="fi-snsuxl-envelope"></i></a>
+                                    </div>
+                                  
+                                </div>
+
+                            </div>
+
+                            <div class="col-12 col-md-6 col-lg-3  card-margin-down wow bounceIn">
+
+                                <div class="card text-center" style="width: 100%;">
+                                    <img src="assests/images/team/Picture22.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Jayani Chamika S.G.</h5>
+                                        <p class="card-title">Member</p>
+                                        <a href="#"><i class="fi-snsuxl-linkedin"></i></a>
+                                        <a href="#"><i class="fi-snsuxl-facebook"></i></a>
+                                        <a href="#"><i class="fi-cnsuxl-globe"></i></a>
+                                        <a href="#"><i class="fi-snsuxl-github-alt"></i></a>
+                                        <a href="#"><i class="fi-snsuxl-envelope"></i></a>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-3  card-margin-down wow bounceIn">
+
+                                <div class="card text-center" style="width: 100%;">
+                                    <img src="assests/images/team/Picture3.jpeg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Mishara Samadhi D.H</h5>
+                                        <p class="card-title">Member</p>
+                                        <a href="#"><i class="fi-snsuxl-linkedin"></i></a>
+                                        <a href="#"><i class="fi-snsuxl-facebook"></i></a>
+                                        <a href="#"><i class="fi-cnsuxl-globe"></i></a>
+                                        <a href="#"><i class="fi-snsuxl-github-alt"></i></a>
+                                        <a href="#"><i class="fi-snsuxl-envelope"></i></a>
+                                    </div>
+                                  </div>
+
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-3  card-margin-down wow bounceIn">
+
+                                <div class="card text-center" style="width: 100%;">
+                                    <img src="assests/images/team/Picture5.png" height="260pc" width="230pc"  class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Wijesinghe P.U</h5>
+                                        <p class="card-title">Member</p>
+                                        <a href="#"><i class="fi-snsuxl-linkedin"></i></a>
+                                        <a href="#"><i class="fi-snsuxl-facebook"></i></a>
+                                        <a href="#"><i class="fi-cnsuxl-globe"></i></a>
+                                        <a href="#"><i class="fi-snsuxl-github-alt"></i></a>
+                                        <a href="#"><i class="fi-snsuxl-envelope"></i></a>
+                                       </div>
+                                    <ul class="list-group list-group-flush">
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="row">
+
+                            <div class="col-12 col-md-6 col-lg-3 card-margin-down wow bounceIn">
+
+
+                            </div>
+
+                            <div class="col-12 col-md-6 col-lg-3  card-margin-down wow bounceIn">
+
+                                <div class="card text-center" style="width: 100%;">
+                                    <img src="assests/images/team/Pictures1.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Mr. Ravi Supunya</h5>
+                                        <p class="card-title">Supervisor</p>
+                                        <a href="#"><i class="fi-snsuxl-linkedin"></i></a>
+                                        <a href="#"><i class="fi-cnsuxl-globe"></i></a>
+                                        <a href="#"><i class="fi-snsuxl-envelope"></i></a>
+                                    </div>
+
+                                   
+                                </div>
+
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-3  card-margin-down wow bounceIn">
+
+                                <div class="card text-center" style="width: 100%;">
+                                    <img src="assests/images/team/Pictures2.jpg" height="250pc" width="230pc" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Ms. Dulani Maheshika</h5>
+                                        <p class="card-title">Co-Supervisor</p>
+                                        <a href="#"><i class="fi-snsuxl-linkedin"></i></a>
+                                        <a href="#"><i class="fi-cnsuxl-globe"></i></a>
+                                        <a href="#"><i class="fi-snsuxl-envelope"></i></a>
+                                    </div>
+
+                                   
+                                </div>
+
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-3  card-margin-down wow bounceIn">
+
+                               
+
+                            </div>
+                        </div>
+                    </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Team section end -->
+
+        <!-- Milestones -->
+        <section id="section110" class="secdivider">
+            <div class="col-md-12 wow zoomIn text-center">
+                <h2><strong>Milestones</strong></h2>
+              <div class="container">
+                  <div class="container bootdey">
+                      <div class="row gutters">
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                          <div class="card">
+                            <div class="card-body">
+                              <!-- Timeline start -->
+                              <div class="timeline">
+                                <div class="timeline-row wow zoomIn">
+                                  <div class="timeline-time">
+                                    13th February<small>2023</small>
+                                  </div>
+                                  <div class="timeline-dot fb-bg"></div>
+                                  <div class="timeline-content">
+                                    <h2>Topic Evaluation form submission</h2>
+                                    <p>
+                                      Initial topic assessment document of the proposed research
+                                      was submitted for evaluation. The submitted document
+                                      included a brief overview on key aspects of the proposed
+                                      research along with the research problem, research
+                                      objectives, overall solution as well as member task
+                                      breakdown.
+                                    </p>
+                                    <div class="">
+                                      <span class="badge badge-light">No marks allocated</span>
+                                      <!-- <span class="badge badge-light">Admin</span> -->
+                                    </div>
+                                  </div>
+                                </div>
+                
+                                <div class="timeline-row wow zoomIn">
+                                  <div class="timeline-time">
+                                  09th April<small>2023</small>
+                                  </div>
+                                  <div class="timeline-dot green-one-bg"></div>
+                                  <div class="timeline-content green-one">
+                                    <!-- <i class="fa fa-warning"></i> -->
+                                    <h2>Project charter submission</h2>
+                                    <p>
+                                      Once the topic was finalized, the project charter document
+                                      was submitted for evaluation. This document also included
+                                      a brief overview on key aspects of the proposed research
+                                      along with the research problem, research objectives,
+                                      overall solution as well as member task breakdown of the
+                                      proposed research.
+                                    </p>
+                                    <div class="">
+                                      <span class="badge badge-light">No marks allocated</span>
+                                      <!-- <span class="badge badge-light">Admin</span> -->
+                                    </div>
+                                  </div>
+                                </div>
+                
+                                <div class="timeline-row wow zoomIn">
+                                  <div class="timeline-time">
+                                    27th March<small>2023</small>
+                                  </div>
+                                  <div class="timeline-dot fb-bg"></div>
+                                  <div class="timeline-content">
+                                    <h2>Project proposal presentation</h2>
+                                    <p>
+                                      Presented to a panel of judges in order to provide an
+                                      overview of the proposed research.
+                                    </p>
+                                    <div class="">
+                                      <span class="badge badge-light"
+                                        >Marks Allocation - 6%</span
+                                      >
+                                      <!-- <span class="badge badge-light">Admin</span> -->
+                                    </div>
+                                  </div>
+                                </div>
+                
+                                <div class="timeline-row wow zoomIn">
+                                  <div class="timeline-time">
+                                    24th March<small>2023</small>
+                                  </div>
+                                  <div class="timeline-dot green-one-bg"></div>
+                                  <div class="timeline-content green-one">
+                                    <!-- <i class="fa fa-warning"></i> -->
+                                    <h2>Project proposal report</h2>
+                                    <p>
+                                      The submission of a report which provides an in-depth
+                                      analysis pertaining to key aspects of the proposed
+                                      research along with the research problem, objectives, as
+                                      well as the overall proposed solution.
+                                    </p>
+                                    <div class="">
+                                      <span class="badge badge-light"
+                                        >Marks Allocation - 6%</span
+                                      >
+                                      <!-- <span class="badge badge-light">Admin</span> -->
+                                    </div>
+                                  </div>
+                                </div>
+                
+                                <div class="timeline-row wow zoomIn">
+                                  <div class="timeline-time">22nd May<small>2023</small></div>
+                                  <div class="timeline-dot fb-bg"></div>
+                                  <div class="timeline-content">
+                                    <h2>Status document - I</h2>
+                                    <p>
+                                      The submission of a document that provides an overview of
+                                      key tasks conducted by members during the implementation
+                                      phase of the research.
+                                    </p>
+                                    <div class="">
+                                      <span class="badge badge-light"
+                                        >Marks Allocation - 1%</span
+                                      >
+                                      <!-- <span class="badge badge-light">Admin</span> -->
+                                    </div>
+                                  </div>
+                                </div>
+                
+                                <div class="timeline-row wow zoomIn">
+                                  <div class="timeline-time">22nd May<small>2023</small></div>
+                                  <div class="timeline-dot green-one-bg"></div>
+                                  <div class="timeline-content green-one">
+                                    <!-- <i class="fa fa-warning"></i> -->
+                                    <h2>Progress Presentation – I</h2>
+                                    <p>
+                                      Evaluation of 50% completion of the proposed solution by a
+                                      panel of judges.
+                                    </p>
+                                    <div class="">
+                                      <span class="badge badge-light"
+                                        >Marks Allocation - 15%</span
+                                      >
+                                      <!-- <span class="badge badge-light">Admin</span> -->
+                                    </div>
+                                  </div>
+                                </div>
+                
+                                <div class="timeline-row wow zoomIn">
+                                  <div class="timeline-time">20th June <small>2023</small></div>
+                                  <div class="timeline-dot fb-bg"></div>
+                                  <div class="timeline-content">
+                                    <h2>Research Paper submission</h2>
+                                    <p>
+                                      Draft submission of the research paper submitted to the
+                                      supervisor for evaluation.
+                                    </p>
+                                    <div class="">
+                                      <span class="badge badge-light"
+                                        >Marks Allocation - 10%</span
+                                      >
+                                      <!-- <span class="badge badge-light">Admin</span> -->
+                                    </div>
+                                  </div>
+                                </div>
+                
+                                <div class="timeline-row wow zoomIn">
+                                  <div class="timeline-time">
+                                    10th September<small>2023</small>
+                                  </div>
+                                  <div class="timeline-dot green-one-bg"></div>
+                                  <div class="timeline-content green-one">
+                                    <!-- <i class="fa fa-warning"></i> -->
+                                    <h2>Final Report</h2>
+                                    <p>
+                                      Once the topic was finalized, the project charter document
+                                      was submitted for evaluation. This document also included
+                                      a brief overview on key aspects of the proposed research
+                                      along with the research problem, research objectives,
+                                      overall solution as well as member task breakdown of the
+                                      proposed research.
+                                    </p>
+                                    <div class="">
+                                      <span class="badge badge-light"
+                                        >Marks Allocation - 18%</span
+                                      >
+                                      <!-- <span class="badge badge-light">Admin</span> -->
+                                    </div>
+                                  </div>
+                                </div>
+                
+                                <div class="timeline-row wow zoomIn">
+                                  <div class="timeline-time">
+                                    4th September<small>2023</small>
+                                  </div>
+                                  <div class="timeline-dot fb-bg"></div>
+                                  <div class="timeline-content">
+                                    <h2>Progress Presentation - II</h2>
+                                    <p>
+                                      Once the topic was finalized, the project charter document
+                                      was submitted for evaluation. This document also included
+                                      a brief overview on key aspects of the proposed research
+                                      along with the research problem, research objectives,
+                                      overall solution as well as member task breakdown of the
+                                      proposed research.
+                                    </p>
+                                    <div class="">
+                                      <span class="badge badge-light"
+                                        >Marks Allocation - 18%</span
+                                      >
+                                      <!-- <span class="badge badge-light">Admin</span> -->
+                                    </div>
+                                  </div>
+                                </div>
+                
+                                <div class="timeline-row wow zoomIn">
+                                  <div class="timeline-time">
+                                    6th November<small>2023</small>
+                                  </div>
+                                  <div class="timeline-dot green-one-bg"></div>
+                                  <div class="timeline-content green-one">
+                                    <!-- <i class="fa fa-warning"></i> -->
+                
+                                    <h2>Website Assessment</h2>
+                                    <p>
+                                      Initial topic assessment document of the proposed research
+                                      was submitted for evaluation. The submitted document
+                                      included a brief overview on key aspects of the proposed
+                                      research along with the research problem, research
+                                      objectives, overall solution as well as member task
+                                      breakdown.
+                                    </p>
+                                    <div class="">
+                                      <span class="badge badge-light"
+                                        >Marks Allocation - 2%</span
+                                      >
+                                      <!-- <span class="badge badge-light">Admin</span> -->
+                                    </div>
+                                  </div>
+                                </div>
+                
+                                <div class="timeline-row wow zoomIn">
+                                  <div class="timeline-time">
+                                    4th September<small>2023</small>
+                                  </div>
+                                  <div class="timeline-dot fb-bg"></div>
+                                  <div class="timeline-content">
+                                    <h2>
+                                      Project Status document - II
+                                      <br />
+                                      Logbook
+                                      <br />
+                                      Research paper registration notification
+                                    </h2>
+                                    <p>
+                                      Submission of research website and the research logbook
+                                      and status document 2 which provides an overview of all
+                                      key tasks conducted by members during the implementation
+                                      phase of the research.
+                                    </p>
+                                    <div class="">
+                                      <span class="badge badge-light"
+                                        >Marks Allocation - 3%</span
+                                      >
+                                      <!-- <span class="badge badge-light">Admin</span> -->
+                                    </div>
+                                  </div>
+                                </div>
+                
+                                <div class="timeline-row wow zoomIn">
+                                  <div class="timeline-time">
+                                    1st November<small>2023</small>
+                                  </div>
+                                  <div class="timeline-dot green-one-bg"></div>
+                                  <div class="timeline-content green-one">
+                                    <!-- <i class="fa fa-warning"></i> -->
+                
+                                    <h2>Final Presentation and Viva</h2>
+                                    <p>Final evaluation of the completed product.</p>
+                                    <div class="">
+                                      <span class="badge badge-light"
+                                        >Marks Allocation - 20%</span
+                                      >
+                                      <!-- <span class="badge badge-light">Admin</span> -->
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- Timeline end -->
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+              </div>
+        </section>
+        <!-- Milestones end -->
+
+        <section id="section120" class="secdivider" style="background: #f4f4f4;">
+            <div class="container">
+                <div class="row">
+                  <div class="col-md-12 wow zoomIn text-center">
+                    <h2 class="font-piorat">Documents</h2>
+         
+                    <div class="container">
+                      <div class="row">
+                       
+                        <div class="col-md-12 wow zoomIn text-center">
+                          <div class="p-3 mb-2 text-white" style="background: #8b95ff;" role="alert">
+                            <h2><strong>Project Registration Documents</strong></h2>
+                          </div>
+                          <br/>
+                      </div>
+                      <div class="container">
+                        <div class="row">
+                          <div class="col-12 col-md-6 col-lg-3 card-margin-down wow bounceIn">
+                            <div class="card text-center" style="width: 100%;">
+                                <div class="card-body">
+                                  <h5 class="card-title">Topic Assessment</h5>
+                                </div> 
+                                <img src="assests/images/pngegg.png" class="card-img-top" alt="..." style=" padding: 30px;">
+                                <a href="https://docs.google.com/document/d/1LQ1DHOcjKnTUMfjed5Oa8EqH2l4X1OT4/edit?usp=sharing"><button type="button" class="btn  buttonX font-ubuntu" style="width: 100%; color: white; background: #8bb6ff;"><span>Download</span></button></a>
+                            </div>
+                          </div>
+                          <div class="col-12 col-md-6 col-lg-3 card-margin-down wow bounceIn">
+                            <div class="card text-center" style="width: 100%;">
+                              <div class="card-body">
+                                <h5 class="card-title">Project Cover Sheet</h5>
+                              </div> 
+                              <img src="assests/images/pngegg.png" class="card-img-top" alt="..." style=" padding: 30px;">
+                              <a href="https://docs.google.com/document/d/1UxzlWrNzz8P2Mbu9pJrpyjFqxmv9nhrg/edit?usp=sharing"><button type="button" class="btn  buttonX font-ubuntu" style="width: 100%; color: white; background: #8bb6ff;"><span>Download</span></button></a>
+                            </div>
+                          </div>       
+                          <div class="col-12 col-md-6 col-lg-3 card-margin-down wow bounceIn">
+                            <div class="card text-center" style="width: 100%;">
+                              <div class="card-body">
+                                <h5 class="card-title">Project Charter</h5>
+                              </div> 
+                              <img src="assests/images/pngegg.png" class="card-img-top" alt="..." style=" padding: 30px;">
+                              <a href="https://drive.google.com/file/d/1lzcKXTNqtlWjpAUPguuO107GttqGEdqr/view?usp=sharing"><button type="button" class="btn  buttonX font-ubuntu" style="width: 100%; color: white; background: #8bb6ff;"><span>Download</span></button></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+        
+                    </div>
+                    <div class="p-3 mb-2 text-white" style="background: #8b95ff;" role="alert">
+                      <h2><strong>Project Proposal</strong></h2>
+                    </div>
+             
+                </div>
+
+                <div class="container">
+                  <div class="row">
+                    <div class="col-12 col-md-6 col-lg-3 card-margin-down wow bounceIn">
+                      <div class="card text-center" style="width: 100%;">
+                          <div class="card-body">
+                            <h5 class="card-title">Proposal Presentation</h5>
+                          </div> 
+                          <img src="assests/images/pngegg.png" class="card-img-top" alt="..." style=" padding: 30px;">
+                          <a download="" href="https://docs.google.com/presentation/d/1mOtvahkfCUrUBm5mMZHaJFEWd5GGxuSU/edit?usp=sharing"><button type="button" class="btn  buttonX font-ubuntu" style="width: 100%; color: white; background: #8bb6ff;"><span>Download</span></button></a>
+                      </div>
+                    </div>
+                          
+                    <div class="col-12 col-md-6 col-lg-3 card-margin-down wow bounceIn">
+                      <div class="card text-center" style="width: 100%;">
+                        <div class="card-body">
+                          <h5 class="card-title">Proposal - IT20243180</h5>
+                        </div> 
+                        <img src="assests/images/pngegg.png" class="card-img-top" alt="..." style=" padding: 30px;">
+                        <a href="https://drive.google.com/file/d/1A0UWh9BiJ9pvjjEwEfJTpdpIk_aNL2xY/view?usp=sharing"><button type="button" class="btn  buttonX font-ubuntu" style="width: 100%; color: white; background: #8bb6ff;"><span>Download</span></button></a>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 card-margin-down wow bounceIn">
+                      <div class="card text-center" style="width: 100%;">
+                        <div class="card-body">
+                          <h5 class="card-title">Proposal - IT20169480</h5>
+                        </div> 
+                        <img src="assests/images/pngegg.png" class="card-img-top" alt="..." style=" padding: 30px;">
+                        <a href="https://drive.google.com/file/d/19ojJpuMmFbCdBmjnEGpMtHd69R_ZMWs4/view?usp=sharing"><button type="button" class="btn  buttonX font-ubuntu" style="width: 100%; color: white; background: #8bb6ff;"><span>Download</span></button></a>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 card-margin-down wow bounceIn">
+                      <div class="card text-center" style="width: 100%;">
+                        <div class="card-body">
+                          <h5 class="card-title">Proposal - IT20049522</h5>
+                        </div> 
+                        <img src="assests/images/pngegg.png" class="card-img-top" alt="..." style=" padding: 30px;">
+                        <a href="https://drive.google.com/file/d/1-KN0zjShUVh5AZQpKW23i_stZOV9YnGF/view?usp=sharing"><button type="button" class="btn  buttonX font-ubuntu" style="width: 100%; color: white; background: #8bb6ff;"><span>Download</span></button></a>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 card-margin-down wow bounceIn">
+                      <div class="card text-center" style="width: 100%;">
+                        <div class="card-body">
+                          <h5 class="card-title">Proposal - IT19188232</h5>
+                        </div> 
+                        <img src="assests/images/pngegg.png" class="card-img-top" alt="..." style=" padding: 30px;">
+                        <a href="https://drive.google.com/file/d/1pT2q_SMeGOJxBSjVGh674ePRkaIwi8w4/view?usp=sharing"><button type="button" class="btn  buttonX font-ubuntu" style="width: 100%; color: white; background: #8bb6ff;"><span>Download</span></button></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+  
+              </div>
+            </div>
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12 wow zoomIn text-center">
+                  <div class="p-3 mb-2 text-white" style="background: #8b95ff;" role="alert">
+                    <h2><strong>Status Document 01</strong></h2>
+                  </div>
+              </div>
+                  <div class="container">
+                      <div class="row">
+  
+                          <div class="col-12 col-md-6 col-lg-3 card-margin-down wow bounceIn">
+  
+                              <div class="card text-center" style="width: 100%;">
+                                <div class="card-body">
+                                  <h5 class="card-title">IT20243180</h5>
+                              </div> 
+                                <img src="assests/images/pngegg.png" class="card-img-top" alt="..." style=" padding: 30px;">
+                                  
+  
+                                <a download="" href="https://docs.google.com/document/d/1M686n7kUwS6uLJwNXTZZCR0DBsEZ3S8k/edit?usp=sharing"><button type="button" class="btn  buttonX font-ubuntu" style="width: 100%; color: white; background: #8bb6ff;"><span>Download</span></button></a>
+                              </div>
+  
+                          </div>
+  
+                     
+                          <div class="col-12 col-md-6 col-lg-3 card-margin-down wow bounceIn">
+  
+                            <div class="card text-center" style="width: 100%;">
+                              <div class="card-body">
+                                <h5 class="card-title">IT20169480</h5>
+                            </div> 
+                              <img src="assests/images/pngegg.png" class="card-img-top" alt="..." style=" padding: 30px;">
+                                
+  
+                              <a href="https://docs.google.com/document/d/1mIn3Ixw7WkC5w-_fDwNRlausYdYk4wzj/edit?usp=sharing"><button type="button" class="btn  buttonX font-ubuntu" style="width: 100%; color: white; background: #8bb6ff;"><span>Download</span></button></a>
+                            </div>
+  
+                        </div>
+                          
+                        <div class="col-12 col-md-6 col-lg-3 card-margin-down wow bounceIn">
+  
+                          <div class="card text-center" style="width: 100%;">
+                            <div class="card-body">
+                              <h5 class="card-title">IT20049522</h5>
+                          </div> 
+                            <img src="assests/images/pngegg.png" class="card-img-top" alt="..." style=" padding: 30px;">
+                              
+  
+                            <a href="https://docs.google.com/document/d/1THcBXxCwu1yRVaIE9yaVRaOLBkMMeNHB/edit?usp=sharing"><button type="button" class="btn  buttonX font-ubuntu" style="width: 100%; color: white; background: #8bb6ff;"><span>Download</span></button></a>
+                          </div>
+  
+                      </div>
+                      
+                      <div class="col-12 col-md-6 col-lg-3 card-margin-down wow bounceIn">
+  
+                        <div class="card text-center" style="width: 100%;">
+                          <div class="card-body">
+                            <h5 class="card-title">IT19188232</h5>
+                        </div> 
+                          <img src="assests/images/pngegg.png" class="card-img-top" alt="..." style=" padding: 30px;">
+                            
+  
+                          <a href="https://docs.google.com/document/d/1E2DPsdnlsMUJ1nrWiPwISSLlEK_42VwW/edit?usp=sharing"><button type="button" class="btn  buttonX font-ubuntu" style="width: 100%; color: white; background: #8bb6ff;"><span>Download</span></button></a>
+                        </div>
+  
+                    </div>
+                      </div>
+                  </div>
+                      </div>
+                  
+                  </div>
+  
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-md-12 wow zoomIn text-center">
+                        <div class="p-3 mb-2 text-white" style="background: #8b95ff;" role="alert">
+                          <h2><strong>Progress Presentation 01</strong></h2>
+                    </div>
+                        <div class="container">
+                            <div class="row">
+      
+                                <div class="col-12 col-md-6 col-lg-3 card-margin-down wow bounceIn">
+      
+                                    <div class="card text-center" style="width: 100%;">
+                                      <div class="card-body">
+                                        <h5 class="card-title">Presentation</h5>
+                                    </div> 
+                                      <img src="assests/images/pngegg.png" class="card-img-top" alt="..." style=" padding: 30px;">
+                                        
+      
+                                      <a download="" href="https://docs.google.com/presentation/d/1UIfEEDrvsCGuLtzZ0m7xd9ND0j1mXBz9/edit?usp=sharing&ouid=114734601167152071825&rtpof=true&sd=true"><button type="button" class="btn  buttonX font-ubuntu" style="width: 100%; color: white; background: #8bb6ff;"><span>Download</span></button></a>
+                                    </div>
+      
+                                </div>
+      
+                            </div>
+                        </div>
+                            </div>
+                        
+                        </div>
+  
+                        <div class="container">
+                          <div class="row">
+                            <div class="col-md-12 wow zoomIn text-center">
+                              <div class="p-3 mb-2 text-white" style="background: #8b95ff;" role="alert">
+                                <h2><strong>Research Paper</strong></h2>
+                                
+                              </div>
+                          </div>
+                              <div class="container">
+                                  <div class="row">
+            
+                                      <div class="col-12 col-md-6 col-lg-3 card-margin-down wow bounceIn">
+            
+                                          <div class="card text-center" style="width: 100%;">
+                                            <div class="card-body">
+                                              <h5 class="card-title">Research Paper</h5>
+                                          </div> 
+                                            <img src="assests/images/pngegg.png" class="card-img-top" alt="..." style=" padding: 30px;">
+                                              
+            
+                                            <a download="" href="https://drive.google.com/file/d/1a5YQT3ZzxyP5aWr7f6euNZxTS9oHxubJ/view?usp=sharing"><button type="button" class="btn  buttonX font-ubuntu" style="width: 100%; color: white; background: #8bb6ff;"><span>Download</span></button></a>
+                                          </div>
+            
+                                      </div>
+                                  </div>
+                              </div>
+                                  </div>
+                              
+                              </div>
+  
+                              <div class="container">
+                                <div class="row">
+                                  <div class="col-md-12 wow zoomIn text-center">
+                                    
+                                    <div class="p-3 mb-2 text-white" style="background: #8b95ff;" role="alert">
+                                      <h2><strong>Progress Presentation 02</strong></h2>
+                                    </div>
+                                </div>
+                                <div class="container">
+                                  <div class="row">
+                                    <div class="col-12 col-md-6 col-lg-3 card-margin-down wow bounceIn">
+                                      <div class="card text-center" style="width: 100%;">
+                                          <div class="card-body">
+                                            <h5 class="card-title">Presentation</h5>
+                                          </div> 
+                                          <img src="assests/images/pngegg.png" class="card-img-top" alt="..." style=" padding: 30px;">
+                                          <a download="" href="https://docs.google.com/presentation/d/1yRPk_0PD5sNy_wt6gBrxGq1jOjFdNtpX/edit?usp=sharing"><button type="button" class="btn  buttonX font-ubuntu" style="width: 100%; color: white; background: #8bb6ff;"><span>Download</span></button></a>
+                                      </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-3 card-margin-down wow bounceIn">
+                                      <div class="card text-center" style="width: 100%;">
+                                        <div class="card-body">
+                                          <h5 class="card-title">Poster</h5>
+                                        </div> 
+                                        <img src="assests/images/pngegg.png" class="card-img-top" alt="..." style=" padding: 30px;">
+                                        <a href="https://drive.google.com/drive/folders/1ptOAYlG0F4vh-5SSIVb-dfN1ntyIEL4B?usp=sharing"><button type="button" class="btn  buttonX font-ubuntu" style="width: 100%; color: white; background: #8bb6ff;"><span>Download</span></button></a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                  
+                              </div>
+                            </div>
+  
+                            <div class="container">
+                              <div class="row">
+                                <div class="col-md-12 wow zoomIn text-center">
+                                 
+                                  <div class="p-3 mb-2 text-white" style="background: #8b95ff;" role="alert">
+                                    <h2><strong>Final Reports</strong></h2>
+                                  </div>
+                              </div>
+                              <div class="container">
+                                <div class="row">
+                                  <div class="col-12 col-md-6 col-lg-3 card-margin-down wow bounceIn">
+                                    <div class="card text-center" style="width: 100%;">
+                                        <div class="card-body">
+                                          <h5 class="card-title">Report - Team</h5>
+                                        </div> 
+                                        <img src="assests/images/pngegg.png" class="card-img-top" alt="..." style=" padding: 30px;">
+                                        <a download="" href="https://drive.google.com/file/d/1gKjWa54QQ6FAxIbVrV8rIxdkgE2huDEg/view?usp=sharing"><button type="button" class="btn  buttonX font-ubuntu" style="width: 100%; color: white; background:#8bb6ff;"><span>Download</span></button></a>
+                                    </div>
+                                  </div>
+                                  <div class="col-12 col-md-6 col-lg-3 card-margin-down wow bounceIn">
+                                    <div class="card text-center" style="width: 100%;">
+                                      <div class="card-body">
+                                        <h5 class="card-title">Report - IT20243180</h5>
+                                      </div> 
+                                      <img src="assests/images/pngegg.png" class="card-img-top" alt="..." style=" padding: 30px;">
+                                      <a href="https://docs.google.com/document/d/1PIZlNLWrQ0yDjT4QgoSfpatvl6QEwgex/edit?usp=sharing"><button type="button" class="btn  buttonX font-ubuntu" style="width: 100%; color: white; background:#8bb6ff;"><span>Download</span></button></a>
+                                    </div>
+                                  </div>       
+                                  <div class="col-12 col-md-6 col-lg-3 card-margin-down wow bounceIn">
+                                    <div class="card text-center" style="width: 100%;">
+                                      <div class="card-body">
+                                        <h5 class="card-title">Report - IT20169480</h5>
+                                      </div> 
+                                      <img src="assests/images/pngegg.png" class="card-img-top" alt="..." style=" padding: 30px;">
+                                      <a href="https://docs.google.com/document/d/1x6MdIllX2iTJptqOzhch21pox9TNW8u_/edit?usp=sharing"><button type="button" class="btn  buttonX font-ubuntu" style="width: 100%; color: white; background:#8bb6ff;"><span>Download</span></button></a>
+                                    </div>
+                                  </div>
+                                  <div class="col-12 col-md-6 col-lg-3 card-margin-down wow bounceIn">
+                                    <div class="card text-center" style="width: 100%;">
+                                      <div class="card-body">
+                                        <h5 class="card-title">Report - IT20049522</h5>
+                                      </div> 
+                                      <img src="assests/images/pngegg.png" class="card-img-top" alt="..." style=" padding: 30px;">
+                                      <a href="https://docs.google.com/document/d/1uDjcEe8jLnWkfdN3na16bu3WX3A7SS85/edit?usp=sharing"><button type="button" class="btn  buttonX font-ubuntu" style="width: 100%; color: white; background: #8bb6ff;"><span>Download</span></button></a>
+                                    </div>
+                                  </div>
+                                  <div class="col-12 col-md-6 col-lg-3 card-margin-down wow bounceIn">
+                                    <div class="card text-center" style="width: 100%;">
+                                      <div class="card-body">
+                                        <h5 class="card-title">Report - IT19188232</h5>
+                                      </div> 
+                                      <img src="assests/images/pngegg.png" class="card-img-top" alt="..." style=" padding: 30px;">
+                                      <a href="https://drive.google.com/file/d/1aRmFK_XP2ZtXNlffNLDkXR7bNF7E2HlB/view?usp=sharing"><button type="button" class="btn  buttonX font-ubuntu" style="width: 100%; color: white; background: #8bb6ff;"><span>Download</span></button></a>
+                                    </div>
+                                  </div>
+                                  <div class="col-12 col-md-6 col-lg-3 card-margin-down wow bounceIn">
+                                    <div class="card text-center" style="width: 100%;">
+                                      <div class="card-body">
+                                        <h5 class="card-title">Presentation</h5>
+                                      </div> 
+                                      <img src="assests/images/pngegg.png" class="card-img-top" alt="..." style=" padding: 30px;">
+                                      <a href="https://docs.google.com/presentation/d/1cd7kuKWKRsvcQktCXZEabImlDursw-yC/edit?usp=sharing"><button type="button" class="btn  buttonX font-ubuntu" style="width: 100%; color: white; background: #8bb6ff;"><span>Download</span></button></a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                
+                            </div>
+                            <div class="container">
+                              <div class="row">
+                                <div class="col-md-12 wow zoomIn text-center">
+                                  <div class="p-3 mb-2 text-white" style="background: #8b95ff;" role="alert">
+                                    <h2><strong>Status Document 02</strong></h2>
+                                  </div>
+                              </div>
+                                  <div class="container">
+                                      <div class="row">
+                  
+                                          <div class="col-12 col-md-6 col-lg-3 card-margin-down wow bounceIn">
+                  
+                                              <div class="card text-center" style="width: 100%;">
+                                                <div class="card-body">
+                                                  <h5 class="card-title">IT20243180</h5>
+                                              </div> 
+                                                <img src="assests/images/pngegg.png" class="card-img-top" alt="..." style=" padding: 30px;">
+                                                  
+                  
+                                                <a download="" href="https://docs.google.com/document/d/1zFmu5XyOhIMaBoeUykSwMxfMsxZoAnYr/edit?usp=sharing"><button type="button" class="btn  buttonX font-ubuntu" style="width: 100%; color: white; background: #8bb6ff; "><span>Download</span></button></a>
+                                              </div>
+                  
+                                          </div>
+                  
+                                     
+                                          <div class="col-12 col-md-6 col-lg-3 card-margin-down wow bounceIn">
+                  
+                                            <div class="card text-center" style="width: 100%;">
+                                              <div class="card-body">
+                                                <h5 class="card-title">IT20169480</h5>
+                                            </div> 
+                                              <img src="assests/images/pngegg.png" class="card-img-top" alt="..." style=" padding: 30px;">
+                                                
+                  
+                                              <a href="https://docs.google.com/document/d/1T-mHEMAJySC2qabjnLh1GuQKIO9c1n_c/edit?usp=sharing"><button type="button" class="btn  buttonX font-ubuntu" style="width: 100%; color: white; background: #8bb6ff;"><span>Download</span></button></a>
+                                            </div>
+                  
+                                        </div>
+                                          
+                                        <div class="col-12 col-md-6 col-lg-3 card-margin-down wow bounceIn">
+                  
+                                          <div class="card text-center" style="width: 100%;">
+                                            <div class="card-body">
+                                              <h5 class="card-title">IT20049522</h5>
+                                          </div> 
+                                            <img src="assests/images/pngegg.png" class="card-img-top" alt="..." style=" padding: 30px;">
+                                              
+                  
+                                            <a href="https://docs.google.com/document/d/1ZReiAsINKr96esQiC3y1j5jt2xx4ZJKw/edit?usp=sharing"><button type="button" class="btn  buttonX font-ubuntu" style="width: 100%; color: white; background: #8bb6ff;"><span>Download</span></button></a>
+                                          </div>
+                  
+                                      </div>
+                                      
+                                      <div class="col-12 col-md-6 col-lg-3 card-margin-down wow bounceIn">
+                  
+                                        <div class="card text-center" style="width: 100%;">
+                                          <div class="card-body">
+                                            <h5 class="card-title">IT19188232</h5>
+                                        </div> 
+                                          <img src="assests/images/pngegg.png" class="card-img-top" alt="..." style=" padding: 30px;">
+                                            
+                  
+                                          <a href="https://docs.google.com/document/d/148T1n-CQJGJ7u63QaAdB3bbg57AtjeeA/edit?usp=sharing"><button type="button" class="btn  buttonX font-ubuntu" style="width: 100%; color: white; background: #8bb6ff;"><span>Download</span></button></a>
+                                        </div>
+                  
+                                    </div>
+                                      </div>
+                                  </div>
+                                      </div>
+                                  
+                                  </div>
+  
+                          </div>
+                          </div>
+  
+                          </div>
+                      </div>
+                    </div>
+  
+  
+                </div>
+              </div>
+          </div>
+        </section>
+  
+        <section id="section81" class="secdivider" >
+            <div class="content-box-md">
+                <div class="container" style="margin-bottom: 2%">
+                    <div class="row mb-5">
+
+                        <div class="col-md-12 wow zoomIn text-center">
+                            <h4 class="font-piorat">Heal-Derm</h4>
+                            <h1 class="font-piorat">Tools & <strong>Technologies</strong></h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 wow fadeInUp text-center">
+                            <img src="assests/images/tools/t11.png" alt="" width="80px;" margin-top>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 wow fadeInUp text-center">
+                            <img src="assests/images/tools/t22.png" alt="" width=200px;">
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 wow fadeInUp text-center">
+                            <img src="assests/images/tools/t3.png" alt="" width="200px;">
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 wow fadeInUp text-center">
+                            <img src="assests/images/tools/t44.png" alt="" width="200px;">
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 wow fadeInUp text-center">
+                            <img src="assests/images/tools/t5.png" alt="" width="150px;">
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 wow fadeInUp text-center">
+                            <img src="assests/images/tools/Picture1.jpg" alt="" width="150px;" margin-right>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 wow fadeInUp text-center mt-3">
+                            <img src="assests/images/tools/t77.png" alt="" width="200px;">
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 wow fadeInUp text-center mt-3">
+                            <img src="assests/images/tools/t8.jpg" alt="" width="200px;">
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 wow fadeInUp text-center mt-3">
+                          <img src="assests/images/tools/Picture6.png" alt="" width="100px;" margin-right>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+
+        <!-- conatct -->
+        <section id="section10" class="secdivider">
+        <div class="container contact-form wow zoomIn">
+          <form action="https://formsubmit.co/wprabhashi98@gmail.com" method="POST">
+              <h3>Drop Us a Message</h3>
+              <input type="hidden" name="_subject" value="Contact info from Heal-Derm!">
+              <input type="hidden" name="_next" value="https://PrabhashiWijesinghe.github.io/Heal-Derm/pages/p1.html">
+             <div class="row">
+                  <div class="col-md-6">
+                      <div class="form-group">
+                          <input type="text" name="name" class="form-control" placeholder="Your Name *" value="" required/>
+                      </div>
+                      <div class="form-group">
+                          <input type="email" name="email" class="form-control" placeholder="Your Email *" value="" required />
+                      </div>
+                      <div class="form-group">
+                          <input type="text" name="c" class="form-control" placeholder="Your Phone Number *" value="" required/>
+                      </div>
+                  </div>
+                  <div class="col-md-6">
+                      <div class="form-group">
+                          <textarea name="d" class="form-control" placeholder="Your Message *" style="width: 100%; height: 150px;"></textarea>
+                      </div>
+                  </div>
+                 <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                     <div class="form-group">
+                        <button class="btnContact" type="submit">Send</button>
+                     </div>
+                 </div>
+              </div>
+          </form>
+        </div>
+        </section>
+        <!-- conatct end -->
+
+    </main>
+
+<!--
+     +--------------------------------------+
+     +                                      +
+     +               footer                 +
+     +                                      +
+     +--------------------------------------+
+-->
+
+    <footer>
+      <div class="container" style="color: white">
+          <div class="row">
+              <div class="col-12 col-sm-12 col-md-4 col-lg-4 text-center">
+                  <h3 class="font-piorat">Quick Links</h3>
+                  <ol style="list-style: none; padding: 0">
+                      <li><a href="#section1" style="text-decoration: inherit; color: inherit">Home</a></li>
+                      <li><a href="#section3" style="text-decoration: inherit; color: inherit">Domain</a></li>
+                      <li><a href="#section4" style="text-decoration: inherit; color: inherit">Team</a></li>
+                      <li><a href="#section110" style="text-decoration: inherit; color: inherit">Milestones</a></li>
+                      <li><a href="#section81" style="text-decoration: inherit; color: inherit">Technologies</a></li>
+                      <li><a href="#section120" style="text-decoration: inherit; color: inherit">Documents</a></li>
+                  </ol>
+              </div>
+              <div class="col-12 col-sm-12 col-md-4 col-lg-4 text-center">
+                  <h3 class="font-piorat">Contact Details</h3>
+                  <p>SLIIT Malabe Campus, New Kandy Rd, Malabe 10115
+                  <br/>
+                      <a href="mailto: ikalpadith@gmail.com" style="text-decoration: none; color: white">Ishan Kalpadith</a> 
+                      <br>
+                        <a href="mailto: jayaninew1999@gmail.com" style="text-decoration: none; color: white">Jayani Chamika</a> 
+                      <br>
+                        <a href="mailto: mishra.hewage@gmail.com" style="text-decoration: none; color: white">Mishara Samadhi D.H</a> 
+                      <br>
+                        <a href="mailto: prabhashi98@gmail.com" style="text-decoration: none; color: white">Wijesinghe P.U</a> 
+                  </p>
+              </div>
+              <div class="col-12 col-sm-12 col-md-4 col-lg-4 text-center">
+                  <img src="assests/images/logo/logo.png" alt="" width="100%">
+              </div>
+            </div>
+              <div class="row footer-end1">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                    <h6>Copyright 2022 © Heal-Derm. All Rights Reserved.</h6>
+                </div>
+              </div>
+              <div class="row footer-end2">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                    <h6>Concept designed and developed by &nbsp <br> 2023-083 </h6>
+                </div>
+              </div>
+        </div>
+        <!- Back to top ->
+          <a href="#section1" id="back-to-top" class="btn btn-sm btn-yellow btn-back-to-top smooth-scroll" title="home" role="button">
+            <i class="fi-snsuxl-arrow-simple"></i>
+          </a>
+
+
+
+    </footer>
+
+<!--
+     +--------------------------------------+
+     +                                      +
+     +                 js                   +
+     +                                      +
+     +--------------------------------------+-->
+<!--------jquary--------->
+     <script src="assests/js/jquary/jquery-3.4.1.min.js"></script>
+
+<!------bootstrap-------->
+     <script src="assests/js/bootstrap/bootstrap.min.js"></script>
+
+<!---------wow----------->
+     <script src="assests/js/wowjs/wow.min.js"></script>
+
+<!--------owl---------->
+    <script src="assests/js/owl/owl.carousel.min.js"></script>
+
+<!--------owl---------->
+    <script src="assests/js/popup/jquery.magnific-popup.min.js"></script>
+
+<!--------font-awesome---------->
+    <!--<script src="assests/css/fontawesome-free-5.10.2-web/js/all.min.js"></script>-->
+<!--<script src="https://kit.fontawesome.com/a510959f49.js" crossorigin="anonymous"></script>-->
+<!--------main.js---------->
+    <script src="assests/js/common/main/main.js"></script>
+
+<!--------tour.js---------->
+    <script src="assests/js/common/tour/tour.js"></script>
+
+<!--------common.js---------->
+    <script src="assests/js/common/common.js"></script>
+
+<!--------friconix.js---------->
+<script defer src="https://friconix.com/cdn/friconix.js"> </script>
+
+
+</body>
+</html>
